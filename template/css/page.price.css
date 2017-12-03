@@ -1,0 +1,422 @@
+
+#section-price {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #747b84;
+    position: relative;
+}
+.topPart {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 130px);
+    overflow:hidden;
+}
+.footer {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    bottom: 0;
+    overflow:hidden;
+}
+#section-price .footer .skype-holder i, 
+#section-price .foot-text .foot-holder span,
+#section-price .foot-text .skype-holder a {
+    color: #394048;
+}
+.title {
+    position: absolute;
+    width: 51%;
+    height: 80px;
+    top:150px;
+    left: 0;
+    z-index: 3;
+    overflow: hidden;
+}
+.title:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/price-title.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100%;
+    opacity: 0.1;
+    animation: 3s titleAppearance ease;
+}
+@keyframes titleAppearance {
+    0% {
+        top: 150px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+.cardBox {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% - 230px);
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.card {
+    height: 50%;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0;
+    position: relative;
+}
+.card1 {
+    background-color: #f54657;
+}
+.card2{
+    background-color: #394048;
+}
+.card3{
+    background-color: #a8c61e;
+}
+.card4{
+    background-color: #394048;
+}
+.card5{
+    background-color: #12c5c7;
+}
+.card6{
+    background-color: #394048;
+}
+.cardWrap {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    top: 150px;
+}
+.cardWrap .decor {
+    position: absolute;
+    top: 4;
+    bottom: 4;
+    left: 33px;
+    width: 3px;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+}
+.cardWrap .decor:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -33px;
+    width: 33px;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+}
+.cardWrap .text {
+    padding-left: 60px;
+    padding-right: 25px;
+}
+.cardWrap .text h3 {
+    font-size: 24px;
+    font-family: Bicubik, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+.cardWrap .text h3 a.text-form {
+    color: #394048;
+    text-decoration: none;
+    font-size: 16px;
+}
+.cardWrap .text p {
+    display: none;
+}
+.order {
+    width: 200px;
+    height: 80px;
+    box-sizing: border-box;
+}
+.divider {
+    background-color: #394048;
+}
+.skype-holder i {
+    font-size: 20px;
+}
+.mail-order {
+    left: 80px;
+}
+
+@media all and (max-height: 900px)   {
+    .topPart {
+        height: 860px;
+    }
+}
+@media all and (max-width: 1440px) {
+    .cardWrap .text h3 {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 1366px) {
+    .foot-text {
+        width: 865px;
+    }
+    .skype-holder {
+        font-size: 12px;
+    }
+    .foot-text .foot-holder span {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 1350px) {
+    .phones {
+        padding-top: 30px;
+    }
+}
+
+@media all and (max-width: 1280px) {
+    .foot-text {
+        bottom: 40px;
+        display: flex;
+        height: 30px;
+        align-items: center;
+    }
+    .cardWrap .text h3 {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    .topPart {
+        height: 880px;
+    }
+    .title {
+        width: 67%;
+        height: 90px;
+        top: 100px;
+    }
+}
+
+@media all and (max-height: 900px) and (max-width: 1280px)  {
+    .topPart {
+        height: 880px;
+    }
+    .cardBox {
+        height: calc(100% - 190px);
+    }
+}
+
+@media all and (max-width: 1250px) {
+    .policy-links {
+        bottom: 10px;
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .topPart {
+        height: 750px;
+    }
+    .card {
+        height: 50%;
+    }
+    .cardWrap .text h3 {
+        font-size: 15px;
+    }
+    .cardWrap .text h3 a.text-form {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .policy-links a {
+        font-size: 8px;
+    }
+    .policy-links {
+        bottom: 15px;
+        right: 20px;
+        width: 640px;
+    }
+    .foot-text {
+        bottom: 40px;
+        height: 20px;
+        right: 20px;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .topPart {
+        height: 1300px;
+    }
+    .card {
+        height: 33.333333%;
+    }
+    .card3{
+        background-color: #394048;
+    }
+    .card4{
+        background-color: #a8c61e;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .title {
+        top: 115px;
+        width: 80%;
+        height: 45px;
+    }
+    .cardBox {
+        height: calc(100% - 160px);
+    }
+    .col-xs-12 {
+        width: 50%;
+    }
+    .cardWrap .text h3 {
+        font-size: 16px;
+    }
+    .topPart {
+        height: 1030px;
+    }
+    .mail-order {
+        left: 20px;
+    }
+    .footer .foot-text {
+        bottom: 50px;
+        width: 435px;
+    }
+    .policy-links {
+        display: block;
+        text-align:right;
+        bottom: 30px;
+    }
+    .policy-links a:nth-child(3) {
+        display: block;
+        line-height: 20px;
+    }
+    .phones {
+        padding-top: 15px;
+    }
+}
+
+@media all and (max-width: 680px) {
+    .policy-links {
+        height: 40px;
+        bottom: 20px;
+    }
+    .topPart {
+        height: 1495px;
+    }
+    .mail-order {
+        left: 0px;
+    }
+    .policy-links {
+        width: calc(100% - 40px);
+        bottom: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+    .policy-links a {
+        letter-spacing: 1px;
+    }
+    .policy-links a:nth-child(3) {
+        line-height: 10px;
+    }
+    .footer .foot-text {
+        bottom: 15px;
+        width: 310px;
+    }
+    .skype-holder {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .foot-text .foot-holder span {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .topPart {
+        height: 1080px;
+    }
+    .cardWrap .text h3 {
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width: 520px) {
+    .col-sm-6 {
+        width: 100%;
+    }
+    .order {
+        font-size: 8px;
+    }
+    .title {
+        width: 100%;
+    }
+    .topPart {
+        height: 1120px;
+    }
+    .cardBox {
+        height: calc(100% - 160px);
+    }
+    .card {
+        height: 16.666667%;
+    }
+    .cardWrap {
+        top:60px;
+        bottom: auto;
+    }
+    .cardWrap .text h3 {
+        font-size: 14px;
+    }
+    button.order {
+        width: 85px;
+        box-sizing: border-box;
+        padding: 25px 0;
+    }
+    .footer .foot-text {
+        bottom:53px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+        padding: 0;
+    }
+    .policy-links {;
+        bottom: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .skype-holder a {
+        margin-left: 5px;
+    }
+    .card1 {
+        background-color: #f54657;
+    }
+    .card2{
+        background-color: #394048;
+    }
+    .card3{
+        background-color: #a8c61e;
+    }
+    .card4{
+        background-color: #12c5c7;
+    }
+    .card5{
+        background-color: #f54657;
+    }
+    .card6{
+        background-color: #394048;
+    }
+}
+
+@media all and (max-width: 500px) {
+    button.order {
+        height: 60px;
+    }
+}
